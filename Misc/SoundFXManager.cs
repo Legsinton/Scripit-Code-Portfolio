@@ -147,37 +147,16 @@ public class SoundFXManager : MonoBehaviour
     {   // To find and add soundFX in assets
         soundFXDict = new Dictionary<SoundType, object>
         {
-            //Single AudioClips
-            { SoundType.AlarmSound, Resources.Load<AudioClip>("Sounds/Effects/AlarmSound") },
-            { SoundType.Breaking, Resources.Load<AudioClip>("Sounds/Effects/Breaking") },
-            { SoundType.BreakingMetal, Resources.Load<AudioClip>("Sounds/Effects/BreakingMetal") },
-            { SoundType.ButtonFail, Resources.Load<AudioClip>("Sounds/Effects/ButtonFail") },
-            { SoundType.ButtonSolve, Resources.Load<AudioClip>("Sounds/Effects/ButtonSolve") },
-            { SoundType.BuzzRight, Resources.Load<AudioClip>("Sounds/Effects/BuzzRight") },
-            { SoundType.BuzzWrong, Resources.Load<AudioClip>("Sounds/Effects/BuzzWrong") },
-            { SoundType.DoorOpen, Resources.Load<AudioClip>("Sounds/Effects/DoorOpen") },
-            { SoundType.Fill, Resources.Load<AudioClip>("Sounds/Effects/Fill") },
-            { SoundType.Pulse, Resources.Load<AudioClip>("Sounds/Effects/Pulse") },
-            { SoundType.ScreenSound, Resources.Load<AudioClip>("Sounds/Effects/ScreenSound") },
-            { SoundType.Solve, Resources.Load<AudioClip>("Sounds/Effects/Solve") },
-            { SoundType.ShutDown, Resources.Load<AudioClip>("Sounds/Effects/ShutDown") },
-
-            //Multible AudioClips           
-            { SoundType.Ambiance, Resources.LoadAll<AudioClip>("Sounds/Effects/Ambiance") },
-            { SoundType.AmbianceCave, Resources.LoadAll<AudioClip>("Sounds/Effects/AmbianceCave") },
-            { SoundType.ButtonPress, Resources.LoadAll<AudioClip>("Sounds/Effects/ButtonPress") },
-            { SoundType.Chop, Resources.LoadAll<AudioClip>("Sounds/Effects/Chop") },
-            { SoundType.ChopDown, Resources.LoadAll<AudioClip>("Sounds/Effects/ChopDown") },
-            { SoundType.Connect, Resources.LoadAll<AudioClip>("Sounds/Effects/Connect") },
-            { SoundType.DesertAmbiance, Resources.LoadAll<AudioClip>("Sounds/Effects/DesertAmbiance") },
-            { SoundType.Drill, Resources.LoadAll<AudioClip>("Sounds/Effects/Drill") },
-            { SoundType.ForestAmbiance, Resources.LoadAll<AudioClip>("Sounds/Effects/ForestAmbiance") },
-            { SoundType.Frow, Resources.LoadAll<AudioClip>("Sounds/Effects/Frow") },
-            { SoundType.ItemDropDown, Resources.LoadAll<AudioClip>("Sounds/Effects/ItemDropDown") },
-            { SoundType.Typing, Resources.LoadAll<AudioClip>("Sounds/Effects/Typing") },
-            { SoundType.WalkGrass, Resources.LoadAll<AudioClip>("Sounds/Effects/WalkGrass") },
-            { SoundType.WalkStone, Resources.LoadAll<AudioClip>("Sounds/Effects/WalkStone") },
-            { SoundType.WalkGround, Resources.LoadAll<AudioClip>("Sounds/Effects/WalkGround") },
+                //Single AudioClips
+                { SoundType.Death, Resources.Load<AudioClip>("Sounds/Effects/Death") },
+                { SoundType.Coin, Resources.Load<AudioClip>("Sounds/Effects/CoinPling") },
+ 
+                //AudioClips
+                { SoundType.Boing, Resources.LoadAll<AudioClip>("Sounds/Effects/Boing") },
+                { SoundType.Smack, Resources.LoadAll<AudioClip>("Sounds/Effects/Smack") },
+                { SoundType.Bonk, Resources.LoadAll<AudioClip>("Sounds/Effects/Bonk") },
+                { SoundType.Splat, Resources.LoadAll<AudioClip>("Sounds/Effects/Splat") },
+                { SoundType.Launch, Resources.LoadAll<AudioClip>("Sounds/Effects/Launch") }   
             
         };
     }
@@ -614,34 +593,14 @@ public class SoundFXManager : MonoBehaviour
 
 public enum SoundType
 {
-    // Array Of Sounds
-    AlarmSound,
-    Ambiance,
-    ButtonPress,
-    ButtonFail,
-    ButtonSolve,
-    ButtonSound,
-    BuzzRight,
-    BuzzWrong,
-    Chop,
-    ChopDown,
-    Connect,
-    DoorOpen,
-    Drill,
-    Fill,
-    Frow,
-    ItemDropDown,
-    Pulse,
-    Solve,
-    WalkGrass,
-    WalkStone,
-    WalkGround,
-    Typing,
-    ShutDown,
-    Breaking,
-    BreakingMetal,
-    ScreenSound,
-    AmbianceCave,
-    ForestAmbiance,
-    DesertAmbiance,
+        // Array Of Sounds
+        Break,
+        Bonk,
+        Boing,
+        Coin,
+        Death,
+        Launch,
+        Smash, 
+        Smack,
+        Splat
 }
